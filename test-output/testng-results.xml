@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-07T11:17:43 IST" name="Suite" finished-at="2024-12-07T11:17:45 IST" duration-ms="1062">
+    <groups>
+    </groups>
+    <test started-at="2024-12-07T11:17:43 IST" name="chromeTest" finished-at="2024-12-07T11:17:45 IST" duration-ms="1062">
+      <class name="jailer.tests.LoginTest1">
+        <test-method is-config="true" signature="login()[pri:0, instance:jailer.tests.LoginTest1@4e08711f]" started-at="2024-12-07T11:17:43 IST" name="login" finished-at="2024-12-07T11:17:43 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="logintest1(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:jailer.tests.LoginTest1@4e08711f]" started-at="2024-12-07T11:17:43 IST" name="logintest1" data-provider="get" finished-at="2024-12-07T11:17:44 IST" duration-ms="1028" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void jailer.tests.LoginTest1.logintest1(java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: logintest1([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2])
+Arguments: [(java.lang.String) Konnectifyqa+6@gmail.com,(java.lang.String) Testing@123,(java.lang.String) Freshsales Suite,(java.lang.String) Konn,(java.lang.String) https://konnectify-freshworks.myfreshworks.com,(java.lang.String) Z4NrJytly0CWYDUGJDsj5Q]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void jailer.tests.LoginTest1.logintest1(java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: logintest1([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2])
+Arguments: [(java.lang.String) Konnectifyqa+6@gmail.com,(java.lang.String) Testing@123,(java.lang.String) Freshsales Suite,(java.lang.String) Konn,(java.lang.String) https://konnectify-freshworks.myfreshworks.com,(java.lang.String) Z4NrJytly0CWYDUGJDsj5Q]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:909)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:37)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest1 -->
+      </class> <!-- jailer.tests.LoginTest1 -->
+      <class name="jailer.utils.Reports">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:jailer.utils.Reports@5bda8e08]" started-at="2024-12-07T11:17:43 IST" name="startReport" finished-at="2024-12-07T11:17:43 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:jailer.utils.Reports@5bda8e08]" started-at="2024-12-07T11:17:45 IST" name="endReport" finished-at="2024-12-07T11:17:45 IST" duration-ms="562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- jailer.utils.Reports -->
+    </test> <!-- chromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
